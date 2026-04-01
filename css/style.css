@@ -496,6 +496,61 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.8;
 }
 
+/* --- Brand Moments Strip --- */
+.moments { padding: var(--s-section-sm) 0; }
+.moments__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.moments__item {
+  text-align: center;
+  cursor: default;
+}
+.moments__img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border-radius: 2px;
+  background: var(--c-cream-dark);
+}
+.moments__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-slow);
+  will-change: transform;
+}
+.moments__item:hover .moments__img {
+  transform: scale(1.06);
+}
+.moments__img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: all var(--t-base);
+  pointer-events: none;
+}
+.moments__item:hover .moments__img-wrap::after {
+  border-color: var(--c-gold);
+  inset: 5px;
+}
+.moments__caption {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--c-taupe);
+  transition: color var(--t-base);
+}
+.moments__item:hover .moments__caption { color: var(--c-gold); }
+
 /* --- Home Cards --- */
 .home-cards {
   padding: 1rem 0 var(--s-section);
@@ -931,10 +986,25 @@ p:last-child { margin-bottom: 0; }
   margin-top: 0.5rem;
 }
 
+.contact-exterior {
+  overflow: hidden;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+}
+.contact-exterior__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform var(--t-slow);
+}
+.contact-exterior:hover .contact-exterior__img {
+  transform: scale(1.03);
+}
+
 .contact-map {
   width: 100%;
-  height: 100%;
-  min-height: 380px;
+  height: 350px;
   border: 0;
   border-radius: 2px;
 }
@@ -1026,6 +1096,10 @@ p:last-child { margin-bottom: 0; }
   .nav__links { display: none; }
   .nav__hamburger { display: flex; }
 
+  .moments__grid {
+    gap: 1rem;
+  }
+
   .home-cards__grid {
     grid-template-columns: 1fr;
     max-width: 450px;
@@ -1050,6 +1124,13 @@ p:last-child { margin-bottom: 0; }
   .team-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
+  }
+
+  .moments__grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 1.5rem;
   }
 
   .home-cards__grid { max-width: 100%; }
