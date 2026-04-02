@@ -1156,7 +1156,8 @@ p:last-child { margin-bottom: 0; }
 .contact-exterior {
   overflow: hidden;
   border-radius: 2px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  max-width: 420px;
 }
 .contact-exterior__img {
   width: 100%;
@@ -1172,6 +1173,7 @@ p:last-child { margin-bottom: 0; }
   height: 350px;
   border: 0;
   border-radius: 2px;
+  margin-top: 0;
 }
 
 /* --- Footer --- */
