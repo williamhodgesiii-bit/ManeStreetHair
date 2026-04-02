@@ -16,7 +16,7 @@
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Mane Street</a>
-      <button class="nav__hamburger" aria-label="Menu">
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links">
@@ -30,18 +30,22 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" role="dialog" aria-label="Navigation menu">
     <a href="index.html" class="mobile-menu__link">About</a>
+    <div class="mobile-menu__divider"></div>
     <a href="services.html" class="mobile-menu__link">Services</a>
+    <div class="mobile-menu__divider"></div>
     <a href="team.html" class="mobile-menu__link">Team</a>
+    <div class="mobile-menu__divider"></div>
     <a href="contact.html" class="mobile-menu__link">Contact</a>
-    <a href="team.html" class="mobile-menu__book">Book Now</a>
+    <a href="team.html" class="mobile-menu__book">Book an Appointment</a>
+    <a href="contact.html" class="mobile-menu__sub">175 N Main St &mdash; Collierville, TN</a>
   </div>
 
   <!-- Page Header -->
   <section class="page-header">
     <div class="page-header__bg" style="background-image: url('other existing images/scissors services image.webp'); background-position: center 55%;"></div>
-    <div class="page-header__overlay"></div>
+    <div class="page-header__overlay" aria-hidden="true"></div>
     <div class="page-header__content">
       <span class="page-header__label">What We Offer</span>
       <h1 class="page-header__title">Our Services</h1>
@@ -91,7 +95,7 @@
       </div>
 
       <!-- Color -->
-      <div class="service-group reveal">
+      <div class="service-group reveal reveal--delay-1">
         <h2 class="service-group__heading">Color</h2>
         <div class="service-group__line"></div>
         <div class="service-row">
@@ -137,7 +141,7 @@
       </div>
 
       <!-- Hair Treatments -->
-      <div class="service-group reveal">
+      <div class="service-group reveal reveal--delay-2">
         <h2 class="service-group__heading">Hair Treatments</h2>
         <div class="service-group__line"></div>
         <div class="service-row">
@@ -168,7 +172,9 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner container">
-      <nav class="footer__links">
+      <span class="footer__logo">Mane Street Hair Group</span>
+      <p class="footer__tagline">Collierville, Tennessee</p>
+      <nav class="footer__links" aria-label="Footer navigation">
         <a href="index.html" class="footer__link">About</a>
         <a href="services.html" class="footer__link">Services</a>
         <a href="team.html" class="footer__link">Team</a>
@@ -176,11 +182,14 @@
         <a href="contact.html" class="footer__link">Contact</a>
       </nav>
       <div class="footer__line"></div>
-      <p class="footer__meta">
-        Mane Street Hair Group <span>&mdash;</span> 175 North Main Street, Collierville, TN 38017 <span>&mdash;</span> 901.861.HAIR
-      </p>
+      <p class="footer__meta">175 North Main Street, Collierville, TN 38017 <span>&mdash;</span> 901.861.HAIR</p>
     </div>
   </footer>
+
+  <!-- Mobile sticky booking bar -->
+  <div class="booking-bar" aria-hidden="true">
+    <a href="team.html" class="booking-bar__link">Book an Appointment</a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>

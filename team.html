@@ -16,7 +16,7 @@
   <nav class="nav" role="navigation">
     <div class="nav__inner">
       <a href="index.html" class="nav__logo">Mane Street</a>
-      <button class="nav__hamburger" aria-label="Menu">
+      <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav__links">
@@ -30,18 +30,22 @@
   </nav>
 
   <!-- Mobile Menu -->
-  <div class="mobile-menu">
+  <div class="mobile-menu" role="dialog" aria-label="Navigation menu">
     <a href="index.html" class="mobile-menu__link">About</a>
+    <div class="mobile-menu__divider"></div>
     <a href="services.html" class="mobile-menu__link">Services</a>
+    <div class="mobile-menu__divider"></div>
     <a href="team.html" class="mobile-menu__link">Team</a>
+    <div class="mobile-menu__divider"></div>
     <a href="contact.html" class="mobile-menu__link">Contact</a>
-    <a href="team.html" class="mobile-menu__book">Book Now</a>
+    <a href="team.html" class="mobile-menu__book">Book an Appointment</a>
+    <a href="contact.html" class="mobile-menu__sub">175 N Main St &mdash; Collierville, TN</a>
   </div>
 
   <!-- Page Header -->
   <section class="page-header">
     <div class="page-header__bg" style="background-image: url('other existing images/meet the team image.webp'); background-position: center 45%;"></div>
-    <div class="page-header__overlay"></div>
+    <div class="page-header__overlay" aria-hidden="true"></div>
     <div class="page-header__content">
       <span class="page-header__label">Our Creatives</span>
       <h1 class="page-header__title">Meet the Team</h1>
@@ -63,7 +67,8 @@
 
         <a href="team/karen-tabor.html" class="team-card reveal">
           <div class="team-card__photo">
-            <img src="images/team/karen-tabor.jpg" alt="Karen Tabor" loading="lazy">
+            <img src="images/team/karen-tabor.jpg" alt="Karen Tabor" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Karen Tabor</p>
           <p class="team-card__role">Stylist &amp; Owner</p>
@@ -71,7 +76,8 @@
 
         <a href="team/kelly-ussery.html" class="team-card reveal reveal--delay-1">
           <div class="team-card__photo">
-            <img src="images/team/kelly-ussery.jpg" alt="Kelly Ussery" loading="lazy">
+            <img src="images/team/kelly-ussery.jpg" alt="Kelly Ussery" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Kelly Ussery</p>
           <p class="team-card__role">Stylist</p>
@@ -80,8 +86,9 @@
         <a href="team/anna-king.html" class="team-card reveal reveal--delay-2">
           <div class="team-card__photo">
             <div class="team-card__placeholder">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/></svg>
             </div>
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Anna King</p>
           <p class="team-card__role">Stylist</p>
@@ -89,7 +96,8 @@
 
         <a href="team/tammy-mccrum.html" class="team-card reveal">
           <div class="team-card__photo">
-            <img src="images/team/tammy-mccrum.jpg" alt="Tammy McCrum" loading="lazy">
+            <img src="images/team/tammy-mccrum.jpg" alt="Tammy McCrum" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Tammy McCrum</p>
           <p class="team-card__role">Stylist</p>
@@ -97,39 +105,35 @@
 
         <a href="team/raghan-thorn.html" class="team-card reveal reveal--delay-1">
           <div class="team-card__photo">
-            <img src="images/team/raghan-thorn.jpg" alt="Raghan Thorn" loading="lazy">
+            <img src="images/team/raghan-thorn.jpg" alt="Raghan Thorn" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Raghan Thorn</p>
           <p class="team-card__role">Stylist</p>
         </a>
 
-        <a href="team/beka-yager.html" class="team-card reveal reveal--delay-2">
+        <a href="team/hollie-skaggs.html" class="team-card reveal reveal--delay-2">
           <div class="team-card__photo">
-            <img src="images/team/beka-yager.jpg" alt="Beka Yager" loading="lazy">
-          </div>
-          <p class="team-card__name">Beka Yager</p>
-          <p class="team-card__role">Manicurist</p>
-        </a>
-
-        <a href="team/hollie-skaggs.html" class="team-card reveal">
-          <div class="team-card__photo">
-            <img src="images/team/hollie-skaggs.jpg" alt="Hollie Skaggs" loading="lazy">
+            <img src="images/team/hollie-skaggs.jpg" alt="Hollie Skaggs" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Hollie Skaggs</p>
           <p class="team-card__role">Stylist</p>
         </a>
 
-        <a href="team/kelly-tidwell.html" class="team-card reveal reveal--delay-1">
+        <a href="team/kelly-tidwell.html" class="team-card reveal">
           <div class="team-card__photo">
-            <img src="images/team/kelly-tidwell.jpg" alt="Kelly Tidwell" loading="lazy">
+            <img src="images/team/kelly-tidwell.jpg" alt="Kelly Tidwell" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Kelly Tidwell</p>
           <p class="team-card__role">Master Stylist / Colorist</p>
         </a>
 
-        <a href="team/lindsey-gammel.html" class="team-card reveal reveal--delay-2">
+        <a href="team/lindsey-gammel.html" class="team-card reveal reveal--delay-1">
           <div class="team-card__photo">
-            <img src="images/team/lindsey-gammel.jpg" alt="Lindsey Gammel" loading="lazy">
+            <img src="images/team/lindsey-gammel.jpg" alt="Lindsey Gammel" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
           </div>
           <p class="team-card__name">Lindsey Gammel</p>
           <p class="team-card__role">Stylist</p>
@@ -139,10 +143,31 @@
     </div>
   </section>
 
+  <!-- Manicurist -->
+  <section class="team-section">
+    <div class="container">
+      <h2 class="team-section__label">Manicurist</h2>
+      <div class="team-grid team-grid--single">
+
+        <a href="team/beka-yager.html" class="team-card reveal">
+          <div class="team-card__photo">
+            <img src="images/team/beka-yager.jpg" alt="Beka Yager" loading="lazy" decoding="async" width="300" height="400">
+            <div class="team-card__hover"><span class="team-card__view">View Profile</span></div>
+          </div>
+          <p class="team-card__name">Beka Yager</p>
+          <p class="team-card__role">Manicurist</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__inner container">
-      <nav class="footer__links">
+      <span class="footer__logo">Mane Street Hair Group</span>
+      <p class="footer__tagline">Collierville, Tennessee</p>
+      <nav class="footer__links" aria-label="Footer navigation">
         <a href="index.html" class="footer__link">About</a>
         <a href="services.html" class="footer__link">Services</a>
         <a href="team.html" class="footer__link">Team</a>
@@ -150,11 +175,14 @@
         <a href="contact.html" class="footer__link">Contact</a>
       </nav>
       <div class="footer__line"></div>
-      <p class="footer__meta">
-        Mane Street Hair Group <span>&mdash;</span> 175 North Main Street, Collierville, TN 38017 <span>&mdash;</span> 901.861.HAIR
-      </p>
+      <p class="footer__meta">175 North Main Street, Collierville, TN 38017 <span>&mdash;</span> 901.861.HAIR</p>
     </div>
   </footer>
+
+  <!-- Mobile sticky booking bar -->
+  <div class="booking-bar" aria-hidden="true">
+    <a href="team.html" class="booking-bar__link">Book an Appointment</a>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
