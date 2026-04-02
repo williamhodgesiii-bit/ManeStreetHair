@@ -416,9 +416,9 @@ p:last-child { margin-bottom: 0; }
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(0,0,0,0.15) 0%,
-    rgba(30,20,15,0.45) 50%,
-    rgba(30,20,15,0.6) 100%
+    rgba(0,0,0,0.35) 0%,
+    rgba(30,20,15,0.6) 50%,
+    rgba(30,20,15,0.75) 100%
   );
 }
 .hero__content {
@@ -437,6 +437,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--c-gold-light);
   margin-bottom: 1rem;
   display: block;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
   opacity: 0;
   animation: fadeUp 0.9s ease forwards 0.1s;
 }
@@ -447,6 +448,7 @@ p:last-child { margin-bottom: 0; }
   color: var(--c-white);
   letter-spacing: 3px;
   margin-bottom: 0.8rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
   opacity: 0;
   transform: translateY(25px);
   animation: fadeUp 0.9s ease forwards 0.3s;
@@ -456,7 +458,8 @@ p:last-child { margin-bottom: 0; }
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.85);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
   opacity: 0;
   transform: translateY(15px);
   animation: fadeUp 0.9s ease forwards 0.6s;
