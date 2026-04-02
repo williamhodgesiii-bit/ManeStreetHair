@@ -596,7 +596,7 @@ p:last-child { margin-bottom: 0; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  max-width: 960px;
+  max-width: 750px;
   margin: 0 auto;
 }
 .moments__item {
@@ -609,6 +609,8 @@ p:last-child { margin-bottom: 0; }
   aspect-ratio: 4/3;
   border-radius: 2px;
   background: var(--c-cream-dark);
+  max-width: 266px;
+  margin: 0 auto;
 }
 .moments__img {
   width: 100%;
@@ -1157,7 +1159,7 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
   border-radius: 2px;
   margin-bottom: 1rem;
-  max-width: 420px;
+  max-width: 225px;
 }
 .contact-exterior__img {
   width: 100%;
