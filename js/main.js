@@ -3,10 +3,14 @@
   const $ = (s, p = document) => p.querySelector(s);
   const $$ = (s, p = document) => [...p.querySelectorAll(s)];
 
-  // Navbar scroll
+  // Navbar scroll + hide scroll indicator
   const nav = $('.nav');
+  const scrollEl = $('.hero__scroll');
   if (nav && !nav.classList.contains('nav--dark')) {
-    const onScroll = () => nav.classList.toggle('nav--scrolled', scrollY > 50);
+    const onScroll = () => {
+      nav.classList.toggle('nav--scrolled', scrollY > 50);
+      if (scrollEl) scrollEl.style.opacity = scrollY > 30 ? '0' : '';
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
   }

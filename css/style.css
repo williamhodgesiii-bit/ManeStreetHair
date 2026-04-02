@@ -261,29 +261,34 @@ p:last-child { margin-bottom: 0; }
   text-transform: uppercase;
   color: var(--c-white);
   padding: 0.55rem 1.4rem;
-  border: 1px solid rgba(255,255,255,0.5);
+  background: var(--c-gold);
+  border: 1px solid var(--c-gold);
   transition: all var(--t-base);
   border-radius: 1px;
 }
 .nav__book:hover {
-  background: var(--c-gold);
+  background: var(--c-gold-light);
   color: var(--c-white);
-  border-color: var(--c-gold);
+  border-color: var(--c-gold-light);
 }
 .nav--scrolled .nav__book {
-  color: var(--c-brown);
+  color: var(--c-white);
+  background: var(--c-gold);
   border-color: var(--c-gold);
 }
 .nav--scrolled .nav__book:hover {
-  background: var(--c-gold);
+  background: var(--c-gold-light);
   color: var(--c-white);
+  border-color: var(--c-gold-light);
 }
 .nav--dark .nav__book {
-  color: var(--c-brown);
+  color: var(--c-white);
+  background: var(--c-gold);
   border-color: var(--c-gold);
 }
 .nav--dark .nav__book:hover {
-  background: var(--c-gold);
+  background: var(--c-gold-light);
+  border-color: var(--c-gold-light);
   color: var(--c-white);
 }
 
@@ -486,6 +491,7 @@ p:last-child { margin-bottom: 0; }
   gap: 0.5rem;
   opacity: 0;
   animation: fadeUp 0.9s ease forwards 1.2s;
+  transition: opacity 0.4s ease;
 }
 .hero__scroll-text {
   font-size: 0.58rem;
