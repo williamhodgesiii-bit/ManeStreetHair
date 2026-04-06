@@ -913,6 +913,7 @@ p:last-child { margin-bottom: 0; }
   background: var(--c-cream);
   margin-bottom: 1rem;
   border-radius: 3px;
+  display: block;
   transition: transform var(--t-slow), box-shadow var(--t-slow);
   transform-style: preserve-3d;
   will-change: transform;
@@ -1005,6 +1006,24 @@ p:last-child { margin-bottom: 0; }
   font-weight: 300;
   color: var(--c-taupe);
   font-style: italic;
+}
+
+.team-card__book {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.55rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--c-white);
+  background: var(--c-gold);
+  padding: 0.4rem 1.2rem;
+  border-radius: 1px;
+  transition: all var(--t-base);
+}
+.team-card__book:hover {
+  background: var(--c-brown);
+  color: var(--c-white);
 }
 
 /* --- Stylist Detail --- */
