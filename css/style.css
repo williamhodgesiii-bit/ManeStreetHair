@@ -673,11 +673,11 @@ p:last-child { margin-bottom: 0; }
 .moments__item:hover .moments__caption { color: var(--c-gold); }
 
 /* --- Home Cards --- */
-.home-cards { padding: 1rem 0 var(--s-section); }
+.home-cards { padding: 3.5rem 0 var(--s-section); }
 .home-cards__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2rem;
   max-width: 820px;
   margin: 0 auto;
 }
@@ -685,7 +685,8 @@ p:last-child { margin-bottom: 0; }
   position: relative;
   overflow: hidden;
   aspect-ratio: 4/3;
-  border-radius: 2px;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(20,13,10,0.13);
 }
 .home-card__img {
   width: 100%;
@@ -1409,13 +1410,13 @@ p:last-child { margin-bottom: 0; }
   .divider { margin: 0.8rem auto; }
 
   /* Home cards — side by side, compact */
-  .home-cards { padding: 0.5rem 0 2rem; }
+  .home-cards { padding: 2rem 0 2rem; }
   .home-cards__grid {
     grid-template-columns: 1fr 1fr;
-    gap: 0.8rem;
+    gap: 1rem;
     max-width: 100%;
   }
-  .home-card { aspect-ratio: 3/4; }
+  .home-card { aspect-ratio: 3/4; border-radius: 10px; }
   .home-card__overlay { padding: 1rem; }
   .home-card__label { font-size: 0.58rem; letter-spacing: 2px; }
 
