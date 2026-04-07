@@ -803,16 +803,16 @@ p:last-child { margin-bottom: 0; }
 
 .services-list .container--narrow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  align-items: start;
-  max-width: 1060px;
+  align-items: stretch;
+  max-width: 820px;
 }
 
 .service-group {
   background: var(--c-cream-warm);
   border: 1px solid var(--c-border);
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 2rem 1.8rem 2.2rem;
   text-align: center;
 }
