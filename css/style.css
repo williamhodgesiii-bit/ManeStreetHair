@@ -540,6 +540,9 @@ p:last-child { margin-bottom: 0; }
   background-position: center;
   background-color: #5a5048;
 }
+.team-header-bg {
+  background-position: center 30%;
+}
 .page-header__overlay {
   position: absolute;
   inset: 0;
@@ -1386,6 +1389,7 @@ p:last-child { margin-bottom: 0; }
   }
   .page-header__title { font-size: clamp(1.8rem, 6vw, 2.4rem); }
   .page-header__label { font-size: 0.55rem; letter-spacing: 3px; margin-bottom: 0.4rem; }
+  .team-header-bg { background-position: center 20%; }
 
   /* Intro — tighter */
   .intro { padding: 2rem 0 1.5rem; }
