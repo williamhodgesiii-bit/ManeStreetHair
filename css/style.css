@@ -575,6 +575,13 @@ p:last-child { margin-bottom: 0; }
   text-shadow: 0 2px 16px rgba(0,0,0,0.7), 0 0 4px rgba(0,0,0,0.4);
 }
 
+/* Tall variant for team page */
+.page-header--tall {
+  height: 75vh;
+  min-height: 480px;
+  max-height: 750px;
+}
+
 /* --- Intro (Home) --- */
 .intro { padding: var(--s-section) 0 var(--s-section-sm); }
 .intro__inner {
@@ -1390,6 +1397,7 @@ p:last-child { margin-bottom: 0; }
   .page-header__title { font-size: clamp(1.8rem, 6vw, 2.4rem); }
   .page-header__label { font-size: 0.55rem; letter-spacing: 3px; margin-bottom: 0.4rem; }
   .team-header-bg { background-position: center 20%; }
+  .page-header--tall { height: 45vh; min-height: 280px; max-height: 400px; }
 
   /* Intro — tighter */
   .intro { padding: 2rem 0 1.5rem; }
@@ -1502,6 +1510,7 @@ p:last-child { margin-bottom: 0; }
   .hero__cta .btn { width: 70%; }
 
   .page-header { min-height: 150px; }
+  .page-header--tall { height: 40vh; min-height: 220px; max-height: 320px; }
 
   .home-cards__grid { gap: 0.5rem; }
   .home-card__label { font-size: 0.52rem; }
