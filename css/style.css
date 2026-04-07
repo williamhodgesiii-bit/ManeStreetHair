@@ -735,13 +735,12 @@ p:last-child { margin-bottom: 0; }
 /* --- Studio Banner --- */
 .studio-banner {
   position: relative;
-  height: 50vh;
-  min-height: 300px;
-  max-height: 450px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background-color: #6b5b4e;
 }
 .studio-banner__bg {
   position: absolute;
@@ -750,14 +749,26 @@ p:last-child { margin-bottom: 0; }
   background-position: center;
   background-color: #6b5b4e;
 }
+.studio-banner__img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}
 .studio-banner__overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
 }
 .studio-banner__title {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
+  margin: 0;
   font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 300;
   color: var(--c-white);
@@ -1423,9 +1434,8 @@ p:last-child { margin-bottom: 0; }
 
   /* Studio banner — shorter */
   .studio-banner {
-    height: 30vh;
-    min-height: 180px;
-    max-height: 260px;
+    aspect-ratio: 3 / 2;
+    max-height: none;
   }
   .studio-banner__title { font-size: clamp(1.6rem, 5vw, 2.2rem); }
   .studio-info { padding: 1.5rem 0 2rem; }
