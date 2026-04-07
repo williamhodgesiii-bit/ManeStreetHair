@@ -935,14 +935,6 @@ p:last-child { margin-bottom: 0; }
   transform: scale(1.06);
   filter: saturate(1.05) brightness(1.02);
 }
-.team-card__photo img.team-card__img--hollie {
-  object-position: center 5%;
-  transform: scale(1.45);
-  transform-origin: top center;
-}
-.team-card:hover .team-card__photo img.team-card__img--hollie {
-  transform: scale(1.51);
-}
 
 .team-card__photo::after {
   content: '';
