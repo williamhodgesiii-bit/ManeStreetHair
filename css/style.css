@@ -734,14 +734,16 @@ p:last-child { margin-bottom: 0; }
 
 /* --- Studio Banner --- */
 .studio-banner {
+  display: flex;
   position: relative;
   height: 50vh;
   min-height: 300px;
   max-height: 450px;
-  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
 }
 .studio-banner__bg {
   position: absolute;
@@ -754,6 +756,10 @@ p:last-child { margin-bottom: 0; }
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.5);
+  transition: background 0.3s ease;
+}
+.studio-banner:hover .studio-banner__overlay {
+  background: rgba(0,0,0,0.35);
 }
 .studio-banner__title {
   position: relative;
