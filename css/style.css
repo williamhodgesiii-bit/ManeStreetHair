@@ -739,11 +739,12 @@ p:last-child { margin-bottom: 0; }
   height: 50vh;
   min-height: 300px;
   max-height: 450px;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
+  padding-bottom: 3.5rem;
 }
 .studio-banner__bg {
   position: absolute;
@@ -751,24 +752,26 @@ p:last-child { margin-bottom: 0; }
   background-size: cover;
   background-position: center;
   background-color: #6b5b4e;
+  filter: brightness(1.08);
 }
 .studio-banner__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.28) 55%, rgba(0,0,0,0.18) 100%);
   transition: background 0.3s ease;
 }
 .studio-banner:hover .studio-banner__overlay {
-  background: rgba(0,0,0,0.35);
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 55%, rgba(0,0,0,0.12) 100%);
 }
 .studio-banner__title {
   position: relative;
   z-index: 1;
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
   font-weight: 300;
   color: var(--c-white);
-  text-shadow: 0 3px 20px rgba(0,0,0,0.7), 0 1px 6px rgba(0,0,0,0.5);
+  text-shadow: 0 3px 22px rgba(0,0,0,0.75), 0 1px 8px rgba(0,0,0,0.6);
   letter-spacing: 3px;
+  margin: 0;
 }
 
 .studio-info {
@@ -1255,9 +1258,11 @@ p:last-child { margin-bottom: 0; }
 }
 .contact-exterior__img {
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: center center;
+  height: auto;
+  aspect-ratio: 1440 / 1307;
+  max-height: 460px;
+  object-fit: contain;
+  object-position: center bottom;
   border-radius: 10px;
   transition: transform var(--t-slow);
   display: block;
@@ -1448,11 +1453,12 @@ p:last-child { margin-bottom: 0; }
 
   /* Studio banner — shorter */
   .studio-banner {
-    height: 30vh;
-    min-height: 180px;
-    max-height: 260px;
+    height: 32vh;
+    min-height: 200px;
+    max-height: 280px;
+    padding-bottom: 2rem;
   }
-  .studio-banner__title { font-size: clamp(1.6rem, 5vw, 2.2rem); }
+  .studio-banner__title { font-size: clamp(1.8rem, 5.5vw, 2.4rem); letter-spacing: 2.5px; }
   .studio-info { padding: 1.5rem 0 2rem; }
   .studio-info__text { font-size: 1rem; line-height: 1.6; }
   .studio-info__cta { margin-top: 1.2rem; }
@@ -1493,7 +1499,7 @@ p:last-child { margin-bottom: 0; }
   .contact-block { margin-bottom: 1.2rem; }
   .contact-block__value { font-size: 0.84rem; }
   .contact-map { height: 260px; }
-  .contact-exterior__img { height: 220px; }
+  .contact-exterior__img { max-height: 340px; }
 
   /* Stylist detail — compact */
   .stylist-detail { padding-top: 5rem; padding-bottom: 2rem; }
@@ -1554,7 +1560,7 @@ p:last-child { margin-bottom: 0; }
   .contact-actions { flex-direction: column; }
   .contact-actions .btn { width: 100%; text-align: center; }
 
-  .contact-exterior__img { height: 180px; }
+  .contact-exterior__img { max-height: 280px; }
 
   .footer__links { gap: 1rem; }
 }
