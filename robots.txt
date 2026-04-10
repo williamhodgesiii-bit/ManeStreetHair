@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.manestreethairgroup.com/sitemap.xml
+Sitemap: https://manestreethairgroup.com/sitemap.xml
