@@ -1165,6 +1165,22 @@ p:last-child { margin-bottom: 0; }
   transition: border-color var(--t-base);
 }
 .stylist-detail__meta a:hover { border-color: var(--c-gold); }
+.stylist-detail__meta .stylist-detail__hours-days {
+  font-family: var(--f-heading);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--c-charcoal);
+  line-height: 1.25;
+  margin: 0.15rem 0 0.1rem;
+}
+.stylist-detail__meta .stylist-detail__hours-time {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--c-brown);
+  margin: 0;
+}
 
 .stylist-detail__notice {
   margin: 1.5rem 0;
