@@ -752,25 +752,25 @@ p:last-child { margin-bottom: 0; }
   background-size: cover;
   background-position: center;
   background-color: #6b5b4e;
-  filter: brightness(1.25);
+  filter: brightness(1.08);
 }
 .studio-banner__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 55%, rgba(0,0,0,0.05) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.28) 55%, rgba(0,0,0,0.18) 100%);
   transition: background 0.3s ease;
 }
 .studio-banner:hover .studio-banner__overlay {
-  background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.08) 55%, rgba(0,0,0,0.02) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 55%, rgba(0,0,0,0.12) 100%);
 }
 .studio-banner__title {
   position: relative;
   z-index: 1;
-  font-size: clamp(3rem, 6.5vw, 5.5rem);
-  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 300;
   color: var(--c-white);
-  text-shadow: 0 4px 28px rgba(0,0,0,0.85), 0 2px 10px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.6);
-  letter-spacing: 4px;
+  text-shadow: 0 3px 22px rgba(0,0,0,0.75), 0 1px 8px rgba(0,0,0,0.6);
+  letter-spacing: 3px;
   margin: 0;
 }
 
@@ -1456,7 +1456,7 @@ p:last-child { margin-bottom: 0; }
     max-height: 280px;
     padding-bottom: 2rem;
   }
-  .studio-banner__title { font-size: clamp(2.2rem, 7vw, 3rem); letter-spacing: 3px; }
+  .studio-banner__title { font-size: clamp(1.8rem, 5.5vw, 2.4rem); letter-spacing: 2.5px; }
   .studio-info { padding: 1.5rem 0 2rem; }
   .studio-info__text { font-size: 1rem; line-height: 1.6; }
   .studio-info__cta { margin-top: 1.2rem; }
