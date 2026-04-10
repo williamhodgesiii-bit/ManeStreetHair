@@ -872,6 +872,23 @@ p:last-child { margin-bottom: 0; }
   padding: var(--s-section-sm) 0 1rem;
   text-align: center;
 }
+.team-intro__label {
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  margin-bottom: 0.7rem;
+  display: block;
+}
+.team-intro__title {
+  font-family: var(--f-heading);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 300;
+  color: var(--c-charcoal);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
 .team-intro__text {
   font-family: var(--f-heading);
   font-size: 1.3rem;
@@ -1455,6 +1472,8 @@ p:last-child { margin-bottom: 0; }
 
   /* Team — compact grid */
   .team-intro { padding: 1.5rem 0 0.5rem; }
+  .team-intro__label { font-size: 0.55rem; letter-spacing: 3px; margin-bottom: 0.4rem; }
+  .team-intro__title { font-size: clamp(1.8rem, 6vw, 2.4rem); margin-bottom: 0.6rem; }
   .team-intro__text { font-size: 1.05rem; }
   .team-section { padding: 1.2rem 0 2rem; }
   .team-section__label { margin-bottom: 1.5rem; }
