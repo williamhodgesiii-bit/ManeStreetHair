@@ -197,6 +197,24 @@
     ],
     "description": "Full-service hair and nail salon in Historic Downtown Collierville, Tennessee. Appointment-based styling by our team of creative professionals.",
     "image": "https://manestreethairgroup.com/other%20existing%20images/mane2.jpg",
+    "potentialAction": {
+      "@type": "ReserveAction",
+      "name": "Book an Appointment",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://manestreethairgroup.com/team.html",
+        "inLanguage": "en-US",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/IOSPlatform",
+          "http://schema.org/AndroidPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Choose your stylist and book"
+      }
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Salon Services",
