@@ -1355,6 +1355,44 @@ p:last-child { margin-bottom: 0; }
   opacity: 0.4;
 }
 
+/* --- Footer designer credit --- */
+.footer__credit {
+  margin-top: 2.2rem;
+}
+.footer__credit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  padding: 0.62rem 1.4rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 100px;
+  transition: border-color var(--t-base), background var(--t-base);
+}
+.footer__credit-by {
+  font-size: 0.56rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+  transition: color var(--t-base);
+}
+.footer__credit-brand {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  transition: color var(--t-base);
+}
+.footer__credit-btn:hover {
+  border-color: var(--c-gold);
+  background: rgba(196,162,101,0.06);
+}
+.footer__credit-btn:hover .footer__credit-by,
+.footer__credit-btn:hover .footer__credit-brand {
+  color: var(--c-gold-light);
+}
+
 /* --- Animations --- */
 @keyframes fadeUp {
   to { opacity: 1; transform: translateY(0); }
@@ -1535,6 +1573,13 @@ p:last-child { margin-bottom: 0; }
   .footer__links { gap: 1.2rem; margin-bottom: 1.5rem; }
   .footer__line { margin: 0 auto 1rem; }
   .footer__meta { font-size: 0.58rem; }
+  .footer__credit { margin-top: 1.6rem; }
+  .footer__credit-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0.55rem 1.1rem;
+  }
 
   /* Mobile menu — slightly smaller links */
   .mobile-menu { gap: 1.2rem; }
